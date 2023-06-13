@@ -1,0 +1,2 @@
+Встановлення всіх необхідних модулів `npx tailwindcss init`
+Збірка css файлу `npm run build`
