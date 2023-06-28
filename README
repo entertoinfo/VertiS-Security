@@ -1,0 +1,2 @@
+Встановлення всіх необхідних модулів `npx tailwindcss init`
+Збірка css файлу `npx tailwindcss -i ./src/main.css -o ./public/styles.css --watch`
