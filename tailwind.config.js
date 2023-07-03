@@ -26,6 +26,7 @@ module.exports = {
       fontSize: {
         title: '2.625rem',
         mainTitle: '2rem',
+        footer: '',
       },
       padding: {
         '85px': '85px',
