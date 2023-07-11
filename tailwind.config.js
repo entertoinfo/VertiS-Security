@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: ["./*.{html,js}"],
   theme: {
     extend: {
       fontFamily: {
@@ -14,8 +14,8 @@ module.exports = {
       },
       colors: {
         "green-basic": "#2BA84A",
-        "gradient-radial": "rgba(23, 98, 41, 0.3)",
-        
+        "active": "#2BA84A",
+        "tile": "#040F0F",
       },
       backgroundImage: {
         'main': "url('../images/main-bg.png')",
@@ -29,13 +29,14 @@ module.exports = {
       },
       padding: {
         '85px': '85px',
-        
       },
       margin: {
         '0-auto': '0 auto',
       },
       width: {
         '540': '33.75rem',
+        //!'794': '49.625',
+        '738': '46.125rem',
       },
     },
   },
