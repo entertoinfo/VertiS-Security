@@ -1,2 +1,3 @@
-Встановлення всіх необхідних модулів `npx tailwindcss init`
-Збірка css файлу `npx tailwindcss -i ./src/main.css -o ./public/styles.css --watch`
+Ініціалізація проекту `npx tailwindcss init`
+Встановлення усіх необхідних модулів `npm i`
+Збірка css файлу до теки public `npx tailwindcss -i ./src/main.css -o ./public/styles.css --watch`
