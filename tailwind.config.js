@@ -33,9 +33,11 @@ module.exports = {
       margin: {
         '0-auto': '0 auto',
       },
+      screens: {
+        'tablet': '480px',
+    },
       width: {
         '540': '33.75rem',
-        //!'794': '49.625',
         '738': '46.125rem',
       },
     },
