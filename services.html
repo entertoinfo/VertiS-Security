@@ -13,7 +13,7 @@
         <a href="index.html"
           ><img src="./images/logo.svg" alt="Vertis Security"
         /></a>
-        <nav>
+        <nav class="hidden md:block">
           <ul class="uppercase flex text-white">
             <li class="pl-4 text-base">
               <a
@@ -38,19 +38,99 @@
             </li>
           </ul>
         </nav>
+        <div class="md:hidden">
+          <nav class="relative px-4 py-4 flex justify-between items-center">
+            <div class="inline-block md:hidden">
+              <button class="navbar-burger">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </button>
+            </div>
+          </nav>
+          <div class="navbar-menu relative z-50 hidden">
+            <div
+              class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"
+            ></div>
+            <nav
+              class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-black border-r overflow-y-auto"
+            >
+              <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                </a>
+                <button class="navbar-close">
+                  <svg
+                    class="h-6 w-6 text-green-basic cursor-pointer hover:text-gray-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div>
+                <ul>
+                  <li class="mb-1">
+                    <a
+                      class="block p-4 text-sm font-semibold text-white hover:bg-green-50 hover:text-green-basic rounded"
+                      href="index.html"
+                      >Про нас</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      class="block p-4 text-sm font-semibold text-white hover:bg-green-50 hover:text-green-basic rounded"
+                      href="services.html"
+                      >Наші послуги</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      class="block p-4 text-sm font-semibold text-white hover:bg-green-50 hover:text-green-basic rounded"
+                      href="tel:380635468665"
+                      >+38(063)546 86 65</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
     <div class="wrapper">
       <main class="bg-main bg-center bg-no-repeat bg-cover">
         <section class="font-Circe text-center text-white pb-16">
-          <div class="text-title text-green-basic font-bold pt-85px pb-7">
+          <div
+            class="text-3xl sm:text-title text-green-basic font-bold pt-85px pb-7"
+          >
             <h1>Спектр послуг економічної безпеки</h1>
           </div>
-          <div class="text-xl flex flex-col items-center">
+          <div
+            class="text-base sm:text-xl flex flex-col items-center m-3 md:m-0"
+          >
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Прогнозування всіх потенційних зовнішніх і внутрішніх загроз
                 економічній безпеці підприємства, оцінка негативних наслідків,
                 вироблення заходів для запобігання загрозам і мінімізації
@@ -58,58 +138,58 @@
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Аналіз облікової політики підприємства з точки зору виявлення
                 можливостей зловживань службовим положенням, розкрадань,
                 вчинення інших протиправних дій співробітниками підприємства.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Здійснення вибіркової перевірки організації обліку та списання
                 майна підприємства.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Проведення службових розслідувань за фактом виявлення нестач,
                 фактів розкрадання, псування майна підприємства.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Розслідування випадків заподіяння економічного збитку внаслідок
                 дій або бездіяльності співробітників підприємства, визначення
                 можливостей і способів відшкодування витрат підприємства.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Аналіз кошторисів на встановлення охоронної, пожежної
                 сигналізацій.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Ділова розвідка бізнес-партнера.
               </p>
             </div>
             <div
               class="text-left rounded-md border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <div class="bg-tile px-7 py-2.5 rounded-md w-738">
+              <div class="bg-tile px-7 py-2.5 rounded-md md:w-738">
                 <h4 class="font-bold">Бізнес-розвідка конкурента:</h4>
                 <ul>
                   <li>
@@ -134,19 +214,21 @@
               </div>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Надання послуги "Таємний покупець".
               </p>
             </div>
-            <div class="text-title text-green-basic font-bold pt-85px pb-7">
+            <div
+              class="text-3xl sm:text-title text-green-basic font-bold pt-85px pb-7"
+            >
               <h3>Робота з персоналом</h3>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Перевірка кандидатів на ключові посади топменеджерів, керівників
                 структурних підрозділів, а також співробітників наділених
                 правами доступу до конфіденційної інформації підприємства, перед
@@ -154,89 +236,91 @@
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Проведення інструктажу при прийнятті на роботу.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Визначення пакета документів, необхідних для ознайомлення та
                 підпису новими співробітниками під час прийняття на роботу, що
                 регулює відповідальність за розголошення комерційної таємниці.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Проведення розслідувань у разі виникнення конфліктних ситуацій
                 між співробітниками підприємства.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Здійснення службових розслідувань за фактом розголошення
                 співробітниками підприємства конфіденційної інформації, втрати
                 службових документів тощо.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Здійснення перевірок посадових осіб, які користуючись службовим
                 становищем, мають можливість спричинення економічних збитків
                 підприємству.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Підготовка звільнень співробітників, у діях яких було виявлено
                 загрозу інтересам підприємства, з метою запобігання нанесенню
                 економічних збитків.
               </p>
             </div>
-            <div class="text-title text-green-basic font-bold pt-85px pb-7">
+            <div
+              class="text-3xl sm:text-title text-green-basic font-bold pt-85px pb-7"
+            >
               <h3>Послуги інформаційної безпеки</h3>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Визначення відомостей підприємства, що підпадають під категорію
                 комерційної та конфіденційної інформації.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Розробка та регламентація політики інформаційної безпеки,
                 доведення її до співробітників, проведення перевірок дотримання
                 вимог інформаційної безпеки.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Аналіз організації документообігу підприємства, зокрема
                 електронного, на предмет виключення несанкціонованого отримання
                 відомостей, що є комерційною таємницею.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Аналіз технології обробки, передачі, поширення інформації
                 підприємства з метою виявлення можливих каналів витоку та інших
                 загроз безпеці інформації.
@@ -245,109 +329,121 @@
             <div
               class="text-left rounded-md border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <div class="bg-tile px-7 py-2.5 rounded-md w-738">
+              <div class="bg-tile px-7 py-2.5 rounded-md md:w-738">
                 <h4 class="font-bold">
                   Спільно з ІТ департаментом підприємства-замовника:
                 </h4>
                 <ul>
-                 <li>• Визначення та розмежування прав доступу співробітників до
-                  інформації підприємства, що зберігається в електронному
-                  вигляді на мережевих ресурсах.</li> 
-                  <li>• Проведення заходів щодо запобігання витоку службової
-                    інформації через поштову службу.</li>
-                  <li>• Запобігання доступу до серверів підприємства, як зовнішніми
-                    особами, так і співробітниками підприємства, не наділеними
-                    відповідними правами доступу.</li>
-                  <li>• Контроль і управління доступом до мережевих ресурсів
-                    підприємства, забезпечення можливості аналізу дій користувачів
-                    після отримання доступу.</li>
-                  <li>• Забезпечення безпеки інформації в разі надання
+                  <li>
+                    • Визначення та розмежування прав доступу співробітників до
+                    інформації підприємства, що зберігається в електронному
+                    вигляді на мережевих ресурсах.
+                  </li>
+                  <li>
+                    • Проведення заходів щодо запобігання витоку службової
+                    інформації через поштову службу.
+                  </li>
+                  <li>
+                    • Запобігання доступу до серверів підприємства, як
+                    зовнішніми особами, так і співробітниками підприємства, не
+                    наділеними відповідними правами доступу.
+                  </li>
+                  <li>
+                    • Контроль і управління доступом до мережевих ресурсів
+                    підприємства, забезпечення можливості аналізу дій
+                    користувачів після отримання доступу.
+                  </li>
+                  <li>
+                    • Забезпечення безпеки інформації в разі надання
                     співробітникам віддаленого доступу до інформаційних ресурсів
-                    підприємства.</li>
+                    підприємства.
+                  </li>
                 </ul>
               </div>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Забезпечення безпеки інформації підприємства (як в електронному,
                 так й в паперовому вигляді), запобігання навмисним або
                 випадковим діям щодо її спотворення, знищення.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Виявлення та усунення всіх можливих каналів витоку
                 конфіденційної інформації.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Розробка плану заходів щодо захисту конфіденційної інформації
                 підприємства в умовах надзвичайних ситуацій, в умовах перевірки
                 контролюючих організацій.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Захист від можливого "промислового шпигунства", витоку
                 інформації до конкурентів.
               </p>
             </div>
-            <div class="text-title text-green-basic font-bold pt-85px pb-7">
+            <div
+              class="text-3xl sm:text-title text-green-basic font-bold pt-85px pb-7"
+            >
               <h3>Послуги фізичної безпеки</h3>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Забезпечення безпеки майна підприємства, захисту майна та
                 об'єктів підприємства від крадіжок, розкрадань, псування.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Забезпечення технічного захисту об'єктів - охоронна, пожежна
                 сигналізації.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Взаємодія з охоронними організаціями. Оцінка якості послуг, які
                 вони надають, а також своєчасність реагування в разі виникнення
                 загроз.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Вибір об'єктів, для яких необхідне встановлення
                 відеоспостереження.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Організація відеоспостереження.
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Організація та встановлення мобільного комплекту
                 відеоспостереження у разі отримання інформації про проведення
                 перевірки на підприємстві або у разі отримання інформації про
@@ -356,9 +452,9 @@
               </p>
             </div>
             <div
-              class="rounded-md border border-green-basic border-dashed p-2.5 mb-12"
+              class="w-full rounded-md sm:w-auto border border-green-basic border-dashed p-2.5 mb-12"
             >
-              <p class="w-738 bg-tile px-7 py-2.5 rounded-md">
+              <p class="md:w-738 bg-tile px-7 py-2.5 rounded-md">
                 Організація фізичної охорони підприємства, контроль дотримання
                 пропускного режиму та його автоматизація.
               </p>
@@ -367,37 +463,40 @@
         </section>
       </main>
       <footer
-        class="flex items-center justify-around bg-black font-Circe text-white text-base uppercase"
+        class="inline-block min-w-full tablet:flex items-center justify-around bg-black font-Circe text-white text-base uppercase"
       >
-        <div class="pt-20 pb-20">
-          <img src="./images/logo.svg" alt="Vertis Security" />
+        <div class="pt-8 tablet:pt-20 pb-8 tablet:pb-20">
+          <img
+            class="m-0-auto tablet:m-auto"
+            src="./images/logo.svg"
+            alt="Vertis Security"
+          />
         </div>
         <div class="flex flex-col text-center text-base">
           <a class="hover:text-green-basic duration-50" href="tel:380635468665"
             >+38(063)546 86 65</a
           >
-          <a
-            class="hover:text-green-basic duration-50"
-            href="https://www.instagram.com/vertis.security/"
-            >instagram</a
-          >
+          <!--?Змінити лінку  <a class="hover:text-green-basic duration-50" href="https://www.instagram.com/vertis.security/" target="_blank">instagram</a> -->
           <a
             class="hover:text-green-basic duration-50"
             href="https://www.linkedin.com/in/%D0%B2%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80-%D1%84%D0%B0%D1%80%D0%B0%D1%84%D0%BE%D0%BD%D0%BE%D0%B2-11a51b120"
+            target="_blank"
             >LinkedIn</a
           >
         </div>
-        <div class="text-center">
+        <div class="text-center pb-8 pt-3 tablet:pb-0 tablet:pt-0">
           <nav>
             <ul>
               <li>
-                <a class="hover:text-green-basic duration-50" href="index.html"
+                <a
+                  class="hover:text-green-basic duration-50 menu-button"
+                  href="index.html"
                   >про нас</a
                 >
               </li>
               <li>
                 <a
-                  class="hover:text-green-basic duration-50 menu-button text-active"
+                  class="hover:text-green-basic duration-50 text-active"
                   href="services.html"
                   >НашІ Послуги</a
                 >
@@ -415,6 +514,6 @@
       </footer>
     </div>
 
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

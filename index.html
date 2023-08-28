@@ -13,7 +13,7 @@
         <a href="index.html"
           ><img src="./images/logo.svg" alt="Vertis Security"
         /></a>
-        <nav>
+        <nav class="hidden md:block">
           <ul class="uppercase flex text-white">
             <li class="pl-4 text-base">
               <a
@@ -38,6 +38,82 @@
             </li>
           </ul>
         </nav>
+        <div class="md:hidden">
+          <nav class="relative px-4 py-4 flex justify-between items-center">
+            <div class="inline-block md:hidden">
+              <button class="navbar-burger">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </button>
+            </div>
+          </nav>
+          <div class="navbar-menu relative z-50 hidden">
+            <div
+              class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"
+            ></div>
+            <nav
+              class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-black border-r overflow-y-auto"
+            >
+              <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                </a>
+                <button class="navbar-close">
+                  <svg
+                    class="h-6 w-6 text-green-basic cursor-pointer hover:text-gray-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div>
+                <ul>
+                  <li class="mb-1">
+                    <a
+                      class="block p-4 text-sm font-semibold text-white hover:bg-green-50 hover:text-green-basic rounded"
+                      href="index.html"
+                      >Про нас</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      class="block p-4 text-sm font-semibold text-white hover:bg-green-50 hover:text-green-basic rounded"
+                      href="services.html"
+                      >Наші послуги</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      class="block p-4 text-sm font-semibold text-white hover:bg-green-50 hover:text-green-basic rounded"
+                      href="tel:380635468665"
+                      >+38(063)546 86 65</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
     <div class="wrapper">
@@ -45,11 +121,13 @@
         <section class="font-Circe text-center text-white pb-16">
           <div>
             <h1
-              class="text-title text-green-basic font-bold bg-title bg-top bg-no-repeat pt-85px pb-7 w-816"
+              class="text-3xl text-green-basic font-bold bg-title bg-top bg-no-repeat pt-16 pb-20 pl-6 pr-6 w-816 sm:text-title sm:pb-20 sm:text-4xl"
             >
               АУТСОРСИНГ БЕЗПЕКИ
             </h1>
-            <p class="text-left text-xl w-[45rem] m-0-auto pt-7">
+            <p
+              class="text-center text-base m-0-auto pt-0 pl-6 pr-6 sm:text-left sm:pl-0 sm:pr-0 sm:text-xl sm:w-540 lg:w-[45rem]"
+            >
               Ми беремо на себе повністю або частково функцій обслуговування та
               управління системою економічного, юридичного, технічного,
               інформаційного та фізичного захисту зовнішньому виконавцю протягом
@@ -59,42 +137,57 @@
           </div>
 
           <div>
-            <h2 class="pt-85px text-4xl font-bold">
+            <h2
+              class="pt-6 text-xl tablet:pt-85px tablet:text-2xl sm:text-4xl font-bold"
+            >
               Ми будуємо роботу служби безпеки, <br />
               відштовхуючись від таких елементів
             </h2>
-            <div class="flex justify-center mt-3">
-              <img class="mr-48" src="./images/line-left.svg" alt="line left" />
+            <div class="hidden tablet:flex justify-center mt-3">
+              <img
+                class="mr-12 xl:mr-48"
+                src="./images/line-left.svg"
+                alt="line left"
+              />
               <img src="./images/line-right.svg" alt="line right" />
             </div>
-            <div class="flex justify-center pt-4">
+            <div class="hidden tablet:flex justify-center tablet:pt-4">
               <img
-                class="mr-72"
+                class="hidden md:inline-block mr-72"
                 src="./images/hexagon-1.png"
                 alt="Система запобігання втратам"
               />
               <img
+                class="hidden md:inline-block"
                 src="./images/hexagon-2.png"
                 alt="Система обліку та контролю"
               />
             </div>
-            <div class="text-left flex justify-center pt-3">
-              <div class="w-540 mr-32">
-                <h3 class="text-mainTitle font-bold">
+            <div
+              class="text-center inline-block pt-6 tablet:pt-10 tablet:flex justify-center tablet:text-left"
+            >
+              <div class="mr-5 lg:w-96 xl:w-540 xl:mr-16">
+                <!-- xl:mr-32 -->
+                <h3
+                  class="text-xl ml-6 lg:text-2xl sm:ml-0 xl:text-mainTitle font-bold"
+                >
                   Система запобігання втратам
                 </h3>
-                <p class="text-xl pt-2">
+                <p class="text-base ml-6 sm:ml-0 md:text-xl pt-2">
                   Це комплекс контрольних заходів, що проводяться спільно
                   службою безпеки, системними адміністраторами, бухгалтерією та
                   іншими підрозділами підприємства з метою запобігання втратам
                   товарно-матеріальних цінностей.
                 </p>
               </div>
-              <div class="w-540">
-                <h3 class="text-mainTitle font-bold">
+              <div class="pt-6 tablet:pt-0 lg:w-96 md:mr-6 xl:w-540">
+                <!-- xl:mr-32 -->
+                <h3
+                  class="mr-5 text-xl lg:text-2xl xl:text-mainTitle font-bold"
+                >
                   Система обліку та контролю
                 </h3>
-                <p class="text-xl pt-2">
+                <p class="text-base md:text-xl pt-2">
                   Мова йде про організаційні заходи, технічні засоби та
                   нормативні акти - Законодавчі, професійні, відомчі та
                   об'єктові, на основі яких здійснюється облік і контроль
@@ -102,7 +195,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex justify-center mt-7">
+            <div class="hidden tablet:flex justify-center mt-7">
               <img
                 class="mr-[120px]"
                 src="./images/line-bottom-left.svg"
@@ -112,32 +205,54 @@
             </div>
             <div class="flex flex-col items-center flex-wrap">
               <div>
-                <img src="./images/hexagon-3.png" alt="" />
+                <img
+                  class="hidden md:inline-block"
+                  src="./images/hexagon-3.png"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="pt-3">
-              <h3 class="text-mainTitle font-bold">Структурні підрозділи</h3>
-              <p class="text-xl w-[450px] m-0-auto">
+            <div class="pt-6 tablet:pt-3">
+              <h3 class="text-2xl sm:text-mainTitle font-bold">
+                Структурні підрозділи
+              </h3>
+              <p
+                class="text-base pl-6 pr-6 tablet:m-0-auto tablet:w-[450px] sm:text-xl"
+              >
                 Фахівці, що забезпечують фізичну, економічну та технічну безпеку
                 відділів підприємства
               </p>
             </div>
-            <div class="flex justify-center mt-7">
-              <img class="mr-48" src="./images/line-left.svg" alt="line left" />
+            <div class="hidden tablet:flex justify-center mt-7">
+              <img
+                class="mr-12 sm:mr-48"
+                src="./images/line-left.svg"
+                alt="line left"
+              />
               <img src="./images/line-right.svg" alt="line right" />
             </div>
             <div class="flex justify-center items-center pt-4">
               <img
-                class="mr-[18.3rem]"
+                class="hidden md:inline-block mr-[18.3rem]"
                 src="./images/hexagon-4.png"
                 alt="Кадрова безпека"
               />
-              <img src="./images/hexagon-5.png" alt="Інформаційна безпека" />
+              <img
+                class="hidden md:inline-block"
+                src="./images/hexagon-5.png"
+                alt="Інформаційна безпека"
+              />
             </div>
-            <div class="flex justify-center pt-3">
-              <div class="flex flex-col items-start">
-                <p class="text-mainTitle font-bold">Кадрова безпека</p>
-                <p class="w-[500px] text-xl text-left mr-32">
+            <div class="inline-block pt-6 tablet:flex justify-center md:ml-6">
+              <div class="inline-block tablet:flex flex-col items-start">
+                <p
+                  class="text-lg font-bold tablet:ml-6 sm:text-mainTitle md:ml-0"
+                >
+                  Кадрова безпека
+                </p>
+                <p
+                  class="text-base pl-6 pr-6 tablet:pl-0 tablet:ml-6 tablet:pr-4 tablet:text-left sm:text-xl md:ml-0 lg:w-96 xl:w-[500px] xl:mr-32"
+                >
                   Система підбору персоналу та організації таких взаємовідносин
                   на підприємстві, які допоможуть забезпечити максимальний
                   економічний ефект від його діяльності. Співробітники Служби
@@ -146,9 +261,15 @@
                   звільняються.
                 </p>
               </div>
-              <div class="flex flex-col items-start">
-                <p class="text-mainTitle font-bold">Інформаційна безпека</p>
-                <p class="w-[500px] text-xl text-left">
+              <div
+                class="pt-6 inline-block tablet:flex flex-col items-start tablet:pt-0"
+              >
+                <p class="text-lg font-bold tablet:pl-4 sm:text-mainTitle">
+                  Інформаційна безпека
+                </p>
+                <p
+                  class="text-base pl-6 pr-6 tablet:mr-6 tablet:pl-4 tablet:text-left sm:pr-0 sm:text-xl md:mr-0 lg:w-96 xl:w-[500px]"
+                >
                   Це комплекс заходів, спрямованих на захист конфіденційної
                   інформації підприємства, а також оперативну роботу зі збору,
                   аналізу та використання відомостей із різних джерел про
@@ -162,27 +283,28 @@
         </section>
       </main>
       <footer
-        class="flex items-center justify-around bg-black font-Circe text-white text-base uppercase"
+        class="inline-block min-w-full tablet:flex items-center justify-around bg-black font-Circe text-white text-base uppercase"
       >
-        <div class="pt-20 pb-20">
-          <img src="./images/logo.svg" alt="Vertis Security" />
+        <div class="pt-8 tablet:pt-20 pb-8 tablet:pb-20">
+          <img
+            class="m-0-auto tablet:m-auto"
+            src="./images/logo.svg"
+            alt="Vertis Security"
+          />
         </div>
         <div class="flex flex-col text-center text-base">
           <a class="hover:text-green-basic duration-50" href="tel:380635468665"
             >+38(063)546 86 65</a
           >
-          <a
-            class="hover:text-green-basic duration-50"
-            href="https://www.instagram.com/vertis.security/"
-            >instagram</a
-          >
+          <!--?Змінити лінку  <a class="hover:text-green-basic duration-50" href="https://www.instagram.com/vertis.security/" target="_blank">instagram</a> -->
           <a
             class="hover:text-green-basic duration-50"
             href="https://www.linkedin.com/in/%D0%B2%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80-%D1%84%D0%B0%D1%80%D0%B0%D1%84%D0%BE%D0%BD%D0%BE%D0%B2-11a51b120"
+            target="_blank"
             >LinkedIn</a
           >
         </div>
-        <div class="text-center">
+        <div class="text-center pb-8 pt-3 tablet:pb-0 tablet:pt-0">
           <nav>
             <ul>
               <li>
@@ -212,6 +334,6 @@
       </footer>
     </div>
 
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
